@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Register | RCCG</title>
 
     <!-- styles.css  -->
     <link rel="stylesheet" href="../styles.css">
@@ -33,8 +33,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">RCCG</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
@@ -46,13 +46,14 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li>
+                        <a class="nav-link" href="give.html">Give</a>
+                    </li>
+                    <li>
                         <a class="nav-link" href="#">Event</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#">Give</a>
-                    </li>
-                    <li>
                         <a class="nav-link active" href="register.html">Register</a>
+                        <div class="rline"></div>
                     </li>
                 </ul>
             </div>
@@ -60,57 +61,111 @@
     </nav>
 
 
-        <section id="register">
-            <div class="container">
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" placeholder="First name"
-                            required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+    <section id="register">
+        <div class="container">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom02" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"
-                            required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" required>
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom04" class="form-label">State</label>
-                        <select class="form-select" id="validationCustom04" required>
-                            <option selected value="">Choose...</option>
-                            <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid state.
-                        </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom03" class="form-label">D.O.B</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Month / Date" required>
+                    <div class="invalid-feedback">
+                        Please input a valid date.
                     </div>
-                    <div class="col-md-6">
-                        <label for="validationCustom03" class="form-label">Location</label>
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="Location" required>
-                        <!-- <div class="invalid-feedback">
-                        Please provide a valid city.
-                    </div> -->
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">email</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="email" required>
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
-                    <div class="col-md-12">
-                        <label for="validationCustom03" class="form-label">Prayer Request</label>
-                        <input type="text" class="form-control" id="validationCustom03" placeholder="prayer request"
-                            required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Phone No</label>
+                    <input type="text" class="form-control" id="validationCustom05" placeholder="Phone No" required>
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
-                    <div class="col-12">
-                        <a href="success.html">
-                            <button type="button" class="btn btn-secondary">Submit</button>
-                        </a>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom06" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="validationCustom06" placeholder="Address" required>
+                    <div class="invalid-feedback">
+                        Please input a valid address.
                     </div>
-                </form>
-            </div>
-        </section>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom07" class="form-label">Profession</label>
+                    <input type="text" class="form-control" id="validationCustom07" placeholder="Profession" required>
+                    <div class="invalid-feedback">
+                        Please input a valid Profession.
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom07" class="form-label">Place of work</label>
+                    <input type="text" class="form-control" id="validationCustom07" placeholder="Place of work"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom08" class="form-label">Marital Status</label>
+                    <select class="form-select" id="validationCustom08" required>
+                        <option selected value="">Mr</option>
+                        <option>Mrs</option>
+                        <option>Miss</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom09" class="form-label">Name of spouse</label>
+                    <input type="text" class="form-control" id="validationCustom09" placeholder="Name of spouse"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom10" class="form-label">Phone number of spouse</label>
+                    <input type="text" class="form-control" id="validationCustom10" placeholder="phone number of spouse"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom10" class="form-label">Email of spouse</label>
+                    <input type="text" class="form-control" id="validationCustom10" placeholder="email of spouse"
+                        required>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom11" class="form-label">Number of children</label>
+                    <select class="form-select" id="validationCustom11" required>
+                        <option selected value="">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <a href="success.html">
+                        <button type="button" class="register-button">Submit</button>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </section>
 
-        <!-- Footer section  -->
+    <!-- Footer section  -->
     <section id="footer">
         <div class="container">
             <div class="row">
@@ -152,18 +207,18 @@
         </div>
     </section>
 
-        <!-- Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
-        <!-- Separate Popper and Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-        </script>
+    <!-- Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
